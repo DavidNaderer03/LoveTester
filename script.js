@@ -7,10 +7,6 @@ const header = [
         names: ["david", "sophia"],
         accuracy: "Was glaubst du den"
     },
-    {
-        names: ["stefan", "stefan"],
-        accuracy: "Da gehört Julia hin"
-    }
 ]
 
 function calcLove() {
