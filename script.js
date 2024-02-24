@@ -7,6 +7,14 @@ const header = [
         names: ["david", "sophia"],
         accuracy: "Was glaubst du den"
     },
+    {
+        names: ["felix", "elli"],
+        accuracy: "eher weniger"
+    },
+    {
+        names: ["felix", "elleonora"],
+        accuracy: "eher weniger"
+    }
 ]
 
 function calcLove() {
