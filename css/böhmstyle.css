@@ -62,6 +62,7 @@ p {
 @media screen and (max-width: 375px) {
     img {
         max-height: 32rem;
+        min-height: 400px;
     }
     .justify-img {
         margin-left: 20%;

@@ -32,6 +32,10 @@ const header = [
         accuracy: () => alert("solange der screenshotbutton funktioniert")
     },
     {
+        names: ["jana", "sam"],
+        accuracy: () => alert("solange der screenshotbutton funktioniert")
+    },
+    {
         names: ["adrian", "inder"],
         accuracy: () => alert("inderkinder")
     },
@@ -76,6 +80,36 @@ function calcLove() {
         result.count = 0;
     }
     if (!result.found) {
-        alert(Math.round(Math.random() * 100));
+        alert(`The chance is ${calcLoveWithoutExeption(names)}%`);
     }
+}
+
+function calcLoveWithoutExeption(names) {
+    let tmpText = ""
+    const compareString = "loves"
+    for(const charakter of compareString) {
+        tmpText += (getLetters(charakter, names[0]) + getLetters(charakter, names[1])).toString();
+    }
+    while (tmpText.length > 2) {
+        tmpText = calcDown(tmpText);
+    }
+    return tmpText;
+}
+
+function calcDown(number) {
+    let solution = "";
+    for(let i = 0, j = 1; i < number.length - 1 && j < number.length; i++, j++) {
+        const sumOfDigits = (number[i] - '0') + (number[j] - '0');
+        solution += sumOfDigits.toString();
+    }
+    return solution;
+}
+
+function getLetters(letter, string) {
+    let counter = 0;
+    for(const charakter of string) {
+        if(charakter === letter)
+            counter++;
+    }
+    return counter;
 }
