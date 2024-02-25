@@ -17,15 +17,39 @@ const header = [
     },
     {
         names: ["felix", "felix"],
-        accuracy: () => location.href = "spinningfelix.html"
+        accuracy: () => location.href = "./pages/spinningfelix.html"
     },
     {
         names: ["pages", "pages"],
-        accuracy: () => location.href = "pages.html"
+        accuracy: () => location.href = "./pages/pages.html"
     },
     {
         names: ["stefan", "sam"],
         accuracy: () => alert("als zweite Wahl")
+    },
+    {
+        names: ["jana", "sammy"],
+        accuracy: () => alert("solange der screenshotbutton funktioniert")
+    },
+    {
+        names: ["adrian", "inder"],
+        accuracy: () => alert("inderkinder")
+    },
+    {
+        names: ["leo", "amelie"],
+        accuracy: () => alert("seine Prinzessin")
+    },
+    {
+        names: ["leo", "prinzessin"],
+        accuracy: () => alert("prinzessin Amelie")
+    },
+    {
+        names: ["prinz", "prinzessin"],
+        accuracy: () => alert("leo and amelie")
+    },
+    {
+        names: ["leo", "sam"],
+        accuracy: () => alert("100%")
     }
 ]
 
