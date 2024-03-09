@@ -58,6 +58,10 @@ const header = [
     {
         names: ["böhm", "böhm"],
         accuracy: () => location.href = "./pages/böhm.html"
+    },
+    {
+        names: ["Stefan seine mutter", "katze"],
+        accuracy: () => alert("110%")
     }
 ]
 
